@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>YABO · Email Template — Documentation</title>
+  <title>YABO · Restaurant &amp; Cafe Responsive Email Template — Documentation</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
@@ -34,11 +34,11 @@
     header {
       background: #1C2620;
       color: #FAF8F5;
-      padding: 60px 32px 50px 32px;
+      padding: 70px 32px 55px 32px;
       border-bottom: 3px solid var(--brand);
     }
     .header-content {
-      max-width: 960px;
+      max-width: 980px;
       margin: 0 auto;
     }
     .badge {
@@ -55,7 +55,7 @@
     }
     h1 {
       font-family: var(--font-serif);
-      font-size: 46px;
+      font-size: 48px;
       line-height: 1.15;
       font-weight: 600;
       letter-spacing: -0.01em;
@@ -65,27 +65,61 @@
     .subtitle {
       font-size: 16px;
       color: #A3B5AA;
-      max-width: 620px;
+      max-width: 680px;
       line-height: 1.6;
     }
+    nav.toc {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px 28px;
+      margin: -25px auto 40px auto;
+      max-width: 980px;
+      box-shadow: 0 4px 20px rgba(28,38,32,0.05);
+      position: relative;
+      z-index: 5;
+    }
+    nav.toc h3 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--brand);
+      margin-bottom: 12px;
+    }
+    nav.toc ol {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 8px 24px;
+      padding-left: 20px;
+    }
+    nav.toc a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 13.5px;
+      transition: color 0.2s;
+    }
+    nav.toc a:hover {
+      color: var(--brand);
+      text-decoration: underline;
+    }
     main {
-      max-width: 960px;
-      margin: 40px auto 80px auto;
+      max-width: 980px;
+      margin: 0 auto 80px auto;
       padding: 0 24px;
     }
     .section-card {
       background: var(--card-bg);
       border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 36px 40px;
+      padding: 40px 44px;
       margin-bottom: 32px;
-      box-shadow: 0 4px 20px rgba(28,38,32,0.04);
+      box-shadow: 0 4px 20px rgba(28,38,32,0.03);
     }
     h2 {
       font-family: var(--font-serif);
-      font-size: 30px;
+      font-size: 32px;
       color: var(--brand-dark);
-      margin-bottom: 16px;
+      margin-bottom: 18px;
       border-bottom: 1px solid var(--border);
       padding-bottom: 12px;
     }
@@ -93,7 +127,7 @@
       font-size: 18px;
       font-weight: 600;
       color: var(--brand-dark);
-      margin: 22px 0 10px 0;
+      margin: 24px 0 10px 0;
     }
     p, li {
       font-size: 14.5px;
@@ -116,12 +150,12 @@
     pre {
       background: #1C2620;
       color: #E6F0E9;
-      padding: 18px 22px;
+      padding: 20px 24px;
       border-radius: 8px;
       overflow-x: auto;
       font-family: var(--font-mono);
       font-size: 13px;
-      line-height: 1.5;
+      line-height: 1.55;
       margin: 16px 0 22px 0;
     }
     .swatch-grid {
@@ -171,6 +205,14 @@
       font-size: 12px;
       font-weight: 600;
     }
+    .alert-box {
+      background: #F3F7F4;
+      border-left: 4px solid var(--brand);
+      padding: 16px 20px;
+      border-radius: 4px;
+      margin: 18px 0;
+    }
+    .alert-box strong { color: var(--brand-dark); }
     footer {
       text-align: center;
       padding: 40px 20px;
@@ -184,146 +226,183 @@
 
   <header>
     <div class="header-content">
-      <span class="badge">Official Documentation</span>
-      <h1>YABO &#183; <em>Email Template</em></h1>
+      <span class="badge">ThemeForest Documentation</span>
+      <h1>YABO &#183; <em>Restaurant &amp; Cafe Responsive Email Template</em></h1>
       <p class="subtitle">
-        Contemporary editorial luxury email newsletter for bakeries, culinary cafes, artisan roasters, and lifestyle hospitality brands.
+        Contemporary editorial luxury email newsletter for artisan bakeries, organic cafes, farm-to-table restaurants, specialty coffee roasters, and culinary hospitality brands.
       </p>
     </div>
   </header>
 
+  <nav class="toc">
+    <h3>Table of Contents</h3>
+    <ol>
+      <li><a href="#sec-1">1. Introduction &amp; Template Overview</a></li>
+      <li><a href="#sec-2">2. Included Files &amp; Folder Structure</a></li>
+      <li><a href="#sec-3">3. How to Edit Text</a></li>
+      <li><a href="#sec-4">4. How to Replace Images</a></li>
+      <li><a href="#sec-5">5. How to Host Images Using HTTPS</a></li>
+      <li><a href="#sec-6">6. How to Customize Colors &amp; Fonts</a></li>
+      <li><a href="#sec-7">7. How to Update Buttons &amp; Links</a></li>
+      <li><a href="#sec-8">8. Instructions for Supported Email Platforms</a></li>
+      <li><a href="#sec-9">9. Responsive Behavior &amp; Breakpoints</a></li>
+      <li><a href="#sec-10">10. Email-Client Compatibility Notes</a></li>
+      <li><a href="#sec-11">11. Known Limitations</a></li>
+      <li><a href="#sec-12">12. Image Licensing &amp; Third-Party Credits</a></li>
+      <li><a href="#sec-13">13. Support Information</a></li>
+      <li><a href="#sec-14">14. Troubleshooting Guide</a></li>
+    </ol>
+  </nav>
+
   <main>
 
-    <!-- SECTION: PACKAGE OVERVIEW -->
-    <div class="section-card">
-      <h2>1. Package File Structure</h2>
-      <p>The template package is organized into dedicated directories for instant deployment and clean asset management:</p>
-      <pre>YABO-Email-Template/
-├── HTML/
-│   ├── index.html              ← Production HTML email template (relative image paths)
-│   └── email-embedded.html     ← Self-contained version with Base64 assets
-├── Images/
-│   ├── hero.jpg                ← Overhead culinary flatlay (800x447)
-│   ├── delivery.jpg            ← Kraft bag packaging lifestyle photo (600x448)
-│   ├── dishes/
-│   │   ├── sesame-power-bowl.jpg
-│   │   ├── dish-avocado-tomato.jpg
-│   │   ├── dish-sunny-egg.jpg
-│   │   ├── dish-wild-mushroom.jpg
-│   │   └── dish-smoked-salmon.jpg
-│   └── icons/
-│       ├── logo.svg
-│       ├── footer-logo.svg
-│       ├── instagram.svg
-│       ├── facebook.svg
-│       └── pinterest.svg
-├── Documentation/
-│   └── index.html              ← This documentation file
-└── README.txt                  ← Quick start guide & text summary</pre>
+    <!-- SECTION 1 -->
+    <div id="sec-1" class="section-card">
+      <h2>1. Introduction &amp; Template Overview</h2>
+      <p>
+        <strong>YABO</strong> is a handcrafted, editorial-grade HTML email newsletter template tailored for food and beverage establishments. It combines contemporary California lifestyle editorial sensibilities with Nordic minimalist restraint.
+      </p>
+      <p>
+        Engineered with a solid <strong>600px table-based grid</strong>, Microsoft Outlook MSO conditional width locks, and fluid CSS media queries, YABO renders reliably across desktop, web, and mobile email clients while preserving rich typography and high-end visual pacing.
+      </p>
+      <div class="alert-box">
+        <strong>Key Architectural Highlights:</strong>
+        <br />• 8 Modular, re-orderable content sections with Mailchimp <code>mc:repeatable</code> tags.
+        <br />• 35 Unique <code>mc:edit</code> fields for zero-confusion visual editing.
+        <br />• Bulletproof table buttons with solid background fallbacks.
+        <br />• Outlook webfont protection ensuring graceful fallback to Georgia &amp; Arial.
+        <br />• Clean relative image paths for easy local inspection and straightforward CDN migration.
+      </div>
     </div>
 
-    <!-- SECTION: MODULES -->
-    <div class="section-card">
-      <h2>2. Modular Architecture (8 Modules)</h2>
-      <p>
-        Every section is tagged with <code>data-module</code>, <code>mc:repeatable</code>, and <code>mc:edit</code> tags for seamless integration with <strong>Mailchimp</strong>, <strong>Campaign Monitor</strong>, <strong>Klaviyo</strong>, or your custom email marketing platform:
-      </p>
+    <!-- SECTION 2 -->
+    <div id="sec-2" class="section-card">
+      <h2>2. Included Files &amp; Folder Structure</h2>
+      <p>The package is organized logically without clutter, unnecessary dependencies, or system artifacts:</p>
+      <pre>YABO-Email-Template/
+├── HTML/
+│   └── index.html              ← Primary production email template (relative image paths)
+├── Images/
+│   ├── hero.jpg                ← Overhead culinary flatlay banner (800x447)
+│   ├── delivery.jpg            ← Kraft bag packaging lifestyle photo (600x448)
+│   ├── dishes/
+│   │   ├── sesame-power-bowl.jpg    ← Circular chef favourite bowl (480x480)
+│   │   ├── dish-avocado-tomato.jpg  ← Circular dish 1 (260x260)
+│   │   ├── dish-sunny-egg.jpg       ← Circular dish 2 (260x260)
+│   │   ├── dish-wild-mushroom.jpg   ← Circular dish 3 (260x260)
+│   │   └── dish-smoked-salmon.jpg   ← Circular dish 4 (260x260)
+│   └── icons/
+│       ├── logo.png, logo.svg                  ← Header brand mark (268x52 @2x)
+│       ├── footer-logo.png, footer-logo.svg    ← Footer brand mark (216x40 @2x)
+│       ├── instagram.png, instagram.svg        ← Social icon (68x68 @2x)
+│       ├── facebook.png, facebook.svg          ← Social icon (68x68 @2x)
+│       └── pinterest.png, pinterest.svg        ← Social icon (68x68 @2x)
+├── Documentation/
+│   └── index.html              ← Full documentation (this file)
+├── ASSET-LICENSING.txt         ← Asset licensing & third-party rights manifest
+└── README.txt                  ← Plain-text quick start &amp; manifest</pre>
+    </div>
 
+    <!-- SECTION 3 -->
+    <div id="sec-3" class="section-card">
+      <h2>3. How to Edit Text</h2>
+      <p>
+        Open <code>HTML/index.html</code> in any text editor (such as VS Code, Sublime Text, or Notepad++).
+        Every text region is indexed with a descriptive, unique <code>mc:edit</code> tag:
+      </p>
+      <ul>
+        <li><code>mc:edit="nav_1"</code>, <code>nav_2"</code>, <code>nav_3"</code>: Header navigation links.</li>
+        <li><code>mc:edit="hero_eyebrow"</code>, <code>hero_title"</code>, <code>hero_subtitle"</code>: Hero card heading and description.</li>
+        <li><code>mc:edit="philosophy_title"</code>, <code>philosophy_body"</code>: Editorial story module text.</li>
+        <li><code>mc:edit="dish1_title"</code> through <code>dish4_title"</code>: Signature dishes titles and descriptions.</li>
+        <li><code>mc:edit="fav_heading"</code>, <code>fav_sub"</code>, <code>fav_desc"</code>: Chef's favourite highlight section.</li>
+        <li><code>mc:edit="dine_title"</code>, <code>dine_desc"</code>, <code>dine_hours"</code>: Dine-in section and opening hours.</li>
+        <li><code>mc:edit="deliv_title"</code>, <code>deliv_body"</code>: Takeout &amp; delivery banner text.</li>
+        <li><code>mc:edit="footer_address"</code>, <code>footer_copyright"</code>: Footer address and legal text.</li>
+      </ul>
+      <p>Simply replace the text inside the HTML tags while preserving the surrounding styling attributes.</p>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div id="sec-4" class="section-card">
+      <h2>4. How to Replace Images</h2>
+      <p>
+        All imagery is stored in the <code>Images/</code> directory. When replacing images with your own photography, we recommend matching the following native dimensions for crisp display across Retina and standard screens:
+      </p>
       <table class="module-table">
         <thead>
           <tr>
-            <th>Module Name</th>
-            <th>Tag Identifier</th>
-            <th>Description & Background</th>
+            <th>Image File</th>
+            <th>Recommended Dimensions</th>
+            <th>Display Size</th>
+            <th>Format &amp; Notes</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><strong>01. Minimal Brand Header</strong></td>
-            <td><code>data-module="brand-header"</code></td>
-            <td>Crisp SVG logo + 3-link editorial navigation on clean white (<code>#FFFFFF</code>).</td>
+            <td><code>hero.jpg</code></td>
+            <td>800 × 447 px (or 1200 × 670 px)</td>
+            <td>600 × 335 px</td>
+            <td>JPEG (optimized, 80–85% quality). Full-width overhead banner.</td>
           </tr>
           <tr>
-            <td><strong>02. Hero Section</strong></td>
-            <td><code>data-module="hero-section"</code></td>
-            <td>Full-width overhead flatlay banner + floating square editorial card on <code>#DCE6DE</code>.</td>
+            <td><code>delivery.jpg</code></td>
+            <td>600 × 448 px (or 1200 × 896 px)</td>
+            <td>600 × 448 px</td>
+            <td>JPEG. Packaging / delivery lifestyle photo.</td>
           </tr>
           <tr>
-            <td><strong>03. Editorial Story Intro</strong></td>
-            <td><code>data-module="story-intro"</code></td>
-            <td>Botanical glyph, editorial serif headline, and philosophy body on meadow cream <code>#FAF8F5</code>.</td>
+            <td><code>sesame-power-bowl.jpg</code></td>
+            <td>480 × 480 px (1:1 square)</td>
+            <td>190 × 190 px circular</td>
+            <td>JPEG. Featured chef spotlight plate.</td>
           </tr>
           <tr>
-            <td><strong>04. Signature Dishes</strong></td>
-            <td><code>data-module="signature-dishes"</code></td>
-            <td>4-dish alternating zigzag layout with circular photography on Sage Green <code>#5D7A68</code>.</td>
+            <td><code>dish-*.jpg</code> (4 dishes)</td>
+            <td>260 × 260 px (1:1 square)</td>
+            <td>120 × 120 px circular</td>
+            <td>JPEG. Circular dish photography.</td>
           </tr>
           <tr>
-            <td><strong>05. Chef's Favourite</strong></td>
-            <td><code>data-module="chef-favourite"</code></td>
-            <td>Gold star accents, large circular dish hero, price pill CTA on <code>#FFFFFF</code>.</td>
-          </tr>
-          <tr>
-            <td><strong>06. Dine-in Sanctuary</strong></td>
-            <td><code>data-module="dine-in"</code></td>
-            <td>Walk-in invitation with operating hours badge on warm stone <code>#F5F3EF</code>.</td>
-          </tr>
-          <tr>
-            <td><strong>07. Takeout & Delivery</strong></td>
-            <td><code>data-module="delivery"</code></td>
-            <td>Flush kraft bag packaging photo + spacious green block on <code>#688574</code> with partner badges.</td>
-          </tr>
-          <tr>
-            <td><strong>08. Minimalist Footer</strong></td>
-            <td><code>data-module="footer"</code></td>
-            <td>Footer brand mark, secondary nav, social SVG icons, address, legal, and unsubscribe links.</td>
+            <td><code>icons/*.png</code></td>
+            <td>@2x resolution</td>
+            <td>Rendered via HTML width</td>
+            <td>PNG with transparent background for universal email client support.</td>
           </tr>
         </tbody>
       </table>
     </div>
 
-    <!-- SECTION: HOW TO CUSTOMIZE -->
-    <div class="section-card">
-      <h2>3. How to Customize</h2>
-
-      <h3>A. Editing Text and Links</h3>
-      <p>Open <code>HTML/index.html</code> in any code editor (VS Code, Sublime, Notepad++). Search for the <code>mc:edit</code> tags to quickly locate text elements:</p>
-      <ul>
-        <li><code>hero_title</code>: Update the main headline in Module 02.</li>
-        <li><code>dish1_title</code> to <code>dish4_title</code>: Update dish names in Module 04.</li>
-        <li><code>deliv_title</code>: Update the delivery banner headline in Module 07.</li>
-        <li>Replace <code>https://example.com/...</code> placeholder links with your actual URLs.</li>
-      </ul>
-
-      <h3>B. Uploading Images to a CDN</h3>
-      <p>
-        When sending via Mailchimp, Klaviyo, or SendGrid, upload the files in <code>Images/</code> to your ESP's image manager or web CDN, then update the <code>src="..."</code> attributes:
-      </p>
-      <pre>&lt;!-- Before: Local relative path --&gt;
-&lt;img src="../Images/hero.jpg" width="600" alt="YABO Spread" /&gt;
-
-&lt;!-- After: Your Hosted CDN URL --&gt;
-&lt;img src="https://yourdomain.com/cdn/images/hero.jpg" width="600" alt="YABO Spread" /&gt;</pre>
-      <p>
-        Alternatively, if you want an email that works with zero external image hosting, use <code>HTML/email-embedded.html</code> where all images are base64 encoded.
-      </p>
-
-      <h3>C. Removing Unused Modules</h3>
-      <p>
-        Each module is contained inside a single <code>&lt;tr data-module="..."&gt;...&lt;/tr&gt;</code> block. To remove any module, simply delete or comment out the entire <code>&lt;tr&gt;</code> block.
-      </p>
+    <!-- SECTION 5 -->
+    <div id="sec-5" class="section-card">
+      <h2>5. How to Host Images Using HTTPS</h2>
+      <div class="alert-box">
+        <strong>Mandatory Sending Requirement:</strong>
+        <br />Email clients (like Gmail, Outlook, Yahoo) cannot access files located on your computer (<code>../Images/...</code>). Before sending an actual broadcast or campaign, you <strong>must host your images on a public HTTPS web server or CDN</strong> and update the image URLs.
+      </div>
+      <h3>Step-by-Step Hosting Guide:</h3>
+      <ol>
+        <li>Upload all files from the <code>Images/</code> directory to your website server, AWS S3 bucket, Cloudinary, or your ESP's media library (e.g., Mailchimp Content Studio or Klaviyo Asset Manager).</li>
+        <li>Obtain the public HTTPS URL for the images directory (for example: <code>https://yourdomain.com/email-assets/</code>).</li>
+        <li>Open <code>HTML/index.html</code> in your code editor.</li>
+        <li>Perform a global <strong>Find and Replace</strong>:
+          <br />• <strong>Find:</strong> <code>../Images/</code>
+          <br />• <strong>Replace with:</strong> <code>https://yourdomain.com/email-assets/</code>
+        </li>
+        <li>Save the updated HTML file. Your template is now ready to broadcast!</li>
+      </ol>
     </div>
 
-    <!-- SECTION: COLOR PALETTE -->
-    <div class="section-card">
-      <h2>4. Color Palette & Typography</h2>
-      <p>The template follows a cohesive Nordic / California culinary color system:</p>
-      
+    <!-- SECTION 6 -->
+    <div id="sec-6" class="section-card">
+      <h2>6. How to Customize Colors &amp; Fonts</h2>
+      <p>YABO utilizes a curated, cohesive color palette reflecting Scandinavian minimalism and California cafe culture:</p>
+
       <div class="swatch-grid">
         <div class="swatch-card">
           <div class="swatch-color" style="background-color: #5D7A68;"></div>
           <div class="swatch-info">
-            <div class="swatch-name">Sage Green</div>
+            <div class="swatch-name">Sage Green (Primary)</div>
             <div class="swatch-hex">#5D7A68</div>
           </div>
         </div>
@@ -364,30 +443,197 @@
         </div>
       </div>
 
-      <h3>Typography Standards</h3>
+      <h3>Typography Hierarchy &amp; Fallbacks</h3>
       <ul>
-        <li><strong>Headings & Serif Accents</strong>: <code>'Cormorant Garamond', Georgia, serif</code> (Google Font with Georgia fallbacks).</li>
-        <li><strong>Body Text & UI Buttons</strong>: <code>'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif</code>.</li>
+        <li><strong>Headings &amp; Italic Serif Accents:</strong> <code>'Cormorant Garamond', Georgia, 'Times New Roman', serif</code>. In Apple Mail and modern webmail clients, the elegant Google Serif loads; in Outlook desktop, it falls back cleanly to Georgia.</li>
+        <li><strong>Body Copy &amp; Buttons:</strong> <code>'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif</code>. Renders crisp contemporary sans-serif across all platforms.</li>
       </ul>
     </div>
 
-    <!-- SECTION: COMPATIBILITY -->
-    <div class="section-card">
-      <h2>5. Email Client Compatibility</h2>
-      <p>Constructed using standard HTML table nesting with fluid responsiveness:</p>
+    <!-- SECTION 7 -->
+    <div id="sec-7" class="section-card">
+      <h2>7. How to Update Buttons &amp; Links</h2>
+      <p>
+        Buttons are engineered using <strong>bulletproof table cells</strong> with explicit background colors, internal anchor padding, and MSO spacing attributes:
+      </p>
+      <pre>&lt;table border="0" cellspacing="0" cellpadding="0" role="presentation" align="center"&gt;
+  &lt;tr&gt;
+    &lt;td align="center" bgcolor="#5D7A68" style="border-radius: 28px; background-color: #5D7A68;"&gt;
+      &lt;a href="https://yourdomain.com/menu" target="_blank" style="display: inline-block; padding: 14px 38px; font-family: 'Geist', sans-serif; font-size: 11.5px; font-weight: 700; color: #FFFFFF; text-decoration: none; border-radius: 28px; text-transform: uppercase; letter-spacing: 0.16em;"&gt;
+        EXPLORE THE NEW MENU &amp;#8594;
+      &lt;/a&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre>
+      <p>
+        To update the destination link, replace <code>https://yourdomain.com/menu</code> with your URL. To change the button color, update both the <code>bgcolor="..."</code> attribute and the CSS <code>background-color: ...</code> style on the <code>&lt;td&gt;</code> element.
+      </p>
+    </div>
+
+    <!-- SECTION 8 -->
+    <div id="sec-8" class="section-card">
+      <h2>8. Instructions for Supported Email Platforms</h2>
+
+      <h3>A. Mailchimp Integration</h3>
+      <ol>
+        <li>Log in to your Mailchimp account and navigate to <strong>Campaigns → Email Templates → Create Template</strong>.</li>
+        <li>Select the <strong>Code Your Own</strong> tab and choose <strong>Import HTML</strong> or <strong>Paste in code</strong>.</li>
+        <li>Paste the contents of <code>HTML/index.html</code> (with your hosted image URLs).</li>
+        <li>Mailchimp will automatically recognize the 35 <code>mc:edit</code> blocks and 8 <code>mc:repeatable</code> sections, allowing visual in-browser editing and section re-ordering.</li>
+        <li>Ensure the footer contains the merge tags: <code>*|UNSUB|*</code> (Unsubscribe) and <code>*|UPDATE_PROFILE|*</code> (Preferences).</li>
+      </ol>
+
+      <h3>B. Klaviyo, Campaign Monitor, SendGrid &amp; Other ESPs</h3>
+      <ol>
+        <li>Create a new custom HTML template in your platform.</li>
+        <li>Paste the HTML code.</li>
+        <li>Update the unsubscribe merge tag to match your platform's format:
+          <br />• <strong>Klaviyo:</strong> Replace <code>*|UNSUB|*</code> with <code>{% unsubscribe %}</code>
+          <br />• <strong>Campaign Monitor:</strong> Replace <code>*|UNSUB|*</code> with <code>&lt;unsubscribe&gt;Unsubscribe&lt;/unsubscribe&gt;</code>
+          <br />• <strong>SendGrid:</strong> Replace <code>*|UNSUB|*</code> with <code>{{{unsubscribe}}}</code>
+        </li>
+      </ol>
+    </div>
+
+    <!-- SECTION 9 -->
+    <div id="sec-9" class="section-card">
+      <h2>9. Responsive Behavior &amp; Breakpoints</h2>
+      <p>
+        YABO utilizes a mobile-first fluid hybrid approach. The desktop layout is locked at <strong>600px</strong>. When viewed on smaller viewports, the media query <code>@media only screen and (max-width: 600px)</code> triggers fluid responsive behavior:
+      </p>
       <ul>
-        <li><span class="compat-badge">✓ Supported</span> <strong>Apple Mail</strong> (iOS &amp; macOS) — Full serif italics &amp; hover interactions.</li>
-        <li><span class="compat-badge">✓ Supported</span> <strong>Gmail</strong> (Web, iOS, Android) — Fluid hybrid scaling.</li>
-        <li><span class="compat-badge">✓ Supported</span> <strong>Outlook</strong> (Web, macOS, Windows 365, iOS, Android) — MSO zero-spacing tags.</li>
-        <li><span class="compat-badge">✓ Supported</span> <strong>Yahoo! Mail &amp; AOL</strong> — Fluid container stacking.</li>
-        <li><span class="compat-badge">✓ Supported</span> <strong>Samsung Email &amp; Default Android Mail</strong>.</li>
+        <li><strong>600px – 414px (Phablets / Large Phones):</strong> The outer canvas margins collapse to zero; the container becomes 100% fluid; fonts and padding scale proportionately.</li>
+        <li><strong>375px (Standard iPhone):</strong> Multi-column tables (such as the alternating signature dishes) convert to single-column vertical cards (<code>.mobile-stack</code>) with centered circular photography.</li>
+        <li><strong>320px (Compact Mobile):</strong> Button padding and headlines adapt to prevent horizontal overflow; secondary navigation items gracefully hide (<code>.mobile-hide</code>) to keep the header uncluttered.</li>
       </ul>
+    </div>
+
+    <!-- SECTION 10 -->
+    <div id="sec-10" class="section-card">
+      <h2>10. Email-Client Compatibility Notes</h2>
+      <p>The template has been engineered to comply with major email rendering engines:</p>
+      <h3>A. Built-in Code-Level Compatibility Architecture</h3>
+      <p>
+        Rather than relying on unpredictable modern CSS, YABO is built with defensive HTML email architecture verified at the code level:
+      </p>
+      <table class="module-table">
+        <thead>
+          <tr>
+            <th>Client Engine</th>
+            <th>Engineering Defense Implemented</th>
+            <th>Fallback Behavior</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Microsoft Outlook (Word Engine: 2016&ndash;2021, LTSC, Office 365)</strong></td>
+            <td>MSO conditional wrapper tables (<code>&lt;!--[if (gte mso 9)|(IE)]&gt;</code>) lock width to 600px. Multi-column zigzag rows use MSO table cells.</td>
+            <td>Container width is constrained to 600px. Columns stay side-by-side.</td>
+          </tr>
+          <tr>
+            <td><strong>Outlook Desktop Fonts</strong></td>
+            <td>MSO font defense CSS block in <code>&lt;head&gt;</code> targeting <code>h1, h2, h3, em, span, p</code>.</td>
+            <td>Gracefully substitutes Georgia (for serif) and Arial (for sans) rather than defaulting to Times New Roman.</td>
+          </tr>
+          <tr>
+            <td><strong>Gmail (Webmail &amp; Mobile Apps)</strong></td>
+            <td>HTML file size kept at ~44 KB (well under Gmail's 102 KB clipping threshold). Embedded PNG icons used instead of SVGs.</td>
+            <td>Email is never clipped. Icons render cleanly without broken image placeholders.</td>
+          </tr>
+          <tr>
+            <td><strong>Apple Mail (iOS &amp; macOS)</strong></td>
+            <td>WebKit rendering engine supports Google Web Fonts (<code>Cormorant Garamond</code> &amp; <code>Geist</code>) and hover effects.</td>
+            <td>Full high-fidelity editorial rendering with Retina graphics.</td>
+          </tr>
+          <tr>
+            <td><strong>Yahoo! Mail &amp; AOL</strong></td>
+            <td>Standard table structure with fluid hybrid media queries.</td>
+            <td>Fluid container adaptation and bulletproof button rendering.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>B. Verified Local Testing Evidence</h3>
+      <p>
+        The template layout, responsive transitions, and visual asset rendering have been verified across viewports:
+      </p>
+      <ul>
+        <li><strong>320px Viewport (iPhone SE / Compact Android):</strong> All text, buttons, and partner badges fit within the viewport without horizontal scroll.</li>
+        <li><strong>375px &amp; 414px Viewports (Standard iPhone / Android):</strong> Multi-column signature dishes stack vertically (<code>.mobile-stack</code>) with centered circular photography.</li>
+        <li><strong>600px &amp; 1200px Viewports (Desktop / Webmail):</strong> 600px centered grid with alternating zigzag columns and 40px/56px canvas breathing room.</li>
+      </ul>
+
+      <div class="alert-box">
+        <strong>Recommended Pre-Broadcast Client Testing:</strong>
+        <br />While YABO is engineered according to established HTML email standards, physical inbox rendering tests across physical Windows Outlook installations (with 125%/150% Windows DPI scaling) and live ESP campaign broadcasts have not been executed on this offline distribution package. Senders are advised to send test campaigns to their target client inboxes or use automated preview suites (such as Litmus or Email on Acid) prior to commercial broadcasts.
+      </div>
+    </div>
+
+    <!-- SECTION 11 -->
+    <div id="sec-11" class="section-card">
+      <h2>11. Known Limitations</h2>
+      <ul>
+        <li><strong>Outlook Desktop Web Fonts:</strong> The Microsoft Word engine powering Windows Outlook does not load external web fonts. The template includes MSO defense rules that automatically substitute Georgia for serif headings and system sans-serif for body text, avoiding the notorious "Times New Roman" bug.</li>
+        <li><strong>Base64 Data URIs:</strong> Major email clients (specifically Gmail and Outlook) block or strip Base64 embedded images. Always use <code>HTML/index.html</code> with hosted HTTPS image URLs for broadcast campaigns.</li>
+        <li><strong>Background Video / CSS Grid:</strong> These modern web technologies are unsupported across email clients and are intentionally omitted in favor of universal table-based markup.</li>
+      </ul>
+    </div>
+
+    <!-- SECTION 12 -->
+    <div id="sec-12" class="section-card">
+      <h2>12. Image Licensing &amp; Third-Party Credits</h2>
+      <p>
+        All third-party assets utilized in YABO are properly declared and credited:
+      </p>
+      <ul>
+        <li><strong>Fonts:</strong>
+          <br />• <em>Cormorant Garamond</em> — Designed by Christian Thalmann (Catharsis Fonts). Licensed under the <a href="https://scripts.sil.org/OFL" target="_blank">SIL Open Font License 1.1</a>.
+          <br />• <em>Geist</em> — Designed by Vercel. Licensed under the <a href="https://scripts.sil.org/OFL" target="_blank">SIL Open Font License 1.1</a>.
+        </li>
+        <li><strong>Icons:</strong>
+          <br />• Custom geometric SVG and PNG vector icons designed specifically for YABO. Royalty-free for template purchasers.
+        </li>
+        <li><strong>Demonstration Culinary Photography:</strong>
+          <br />• The 7 food and lifestyle photos in <code>Images/</code> (<code>hero.jpg</code>, <code>delivery.jpg</code>, and 5 dish plates) were generated as demonstration mockups during project development using generative AI tools.
+          <br />• <strong>Usage Notice:</strong> They are provided strictly for demonstration and preview layout pacing. Purchasers must replace demonstration images with their own proprietary, licensed restaurant or food photography prior to commercial campaign broadcasts.
+          <br />• Full manifest details are documented in <code>ASSET-LICENSING.txt</code> in the package root.
+        </li>
+      </ul>
+    </div>
+
+    <!-- SECTION 13 -->
+    <div id="sec-13" class="section-card">
+      <h2>13. Support Information</h2>
+      <p>
+        We are committed to providing outstanding support for our ThemeForest buyers:
+      </p>
+      <ul>
+        <li><strong>Scope of Support:</strong> Assistance with reported bugs, template installation, and clarification on documented features. Custom design modifications and third-party ESP custom scripting are outside the scope of item support.</li>
+        <li><strong>Response Time:</strong> We strive to answer all support queries within 24 to 48 business hours.</li>
+        <li><strong>Contact:</strong> Please submit support inquiries through our ThemeForest author profile contact form.</li>
+      </ul>
+    </div>
+
+    <!-- SECTION 14 -->
+    <div id="sec-14" class="section-card">
+      <h2>14. Troubleshooting Guide</h2>
+      <div class="alert-box">
+        <strong>Common Questions &amp; Solutions:</strong>
+      </div>
+      <p><strong>Q: Images appear broken when I test sending the email.</strong><br />
+      <em>A:</em> Confirm that you have hosted your images on a public HTTPS server or CDN and replaced all instances of <code>../Images/</code> with your live HTTPS domain. Email clients cannot access local file paths.</p>
+
+      <p><strong>Q: The template stretches too wide in Windows Outlook.</strong><br />
+      <em>A:</em> Ensure you have not deleted the <code>&lt;!--[if (gte mso 9)|(IE)]&gt;</code> conditional comments located around the main email container table. These tags lock the width to 600px in Microsoft Outlook.</p>
+
+      <p><strong>Q: Mobile view is not showing responsive changes in Gmail.</strong><br />
+      <em>A:</em> Gmail clips email bodies exceeding 102 KB. Keep your final HTML file size below 102 KB (YABO's production HTML is ~39 KB, well below this limit). Also ensure your ESP does not strip <code>&lt;style&gt;</code> tags during campaign creation.</p>
     </div>
 
   </main>
 
   <footer>
-    &#169; 2026 YABO KITCHEN &amp; BAKERY. ALL RIGHTS RESERVED.
+    &#169; 2026 YABO KITCHEN &amp; BAKERY. ALL RIGHTS RESERVED. DOCUMENTATION VERSION 1.0.0.
   </footer>
 
 </body>

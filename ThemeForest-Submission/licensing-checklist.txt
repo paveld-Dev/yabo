@@ -1,0 +1,86 @@
+================================================================================
+YABO · RESTAURANT & CAFE RESPONSIVE HTML EMAIL TEMPLATE
+ASSET LICENSING & THIRD-PARTY RIGHTS MANIFEST
+================================================================================
+Package Version: 1.0.0
+Author: YABO Design Team
+Date: November 2026
+
+This manifest provides full transparency regarding all fonts, icons, and
+demonstration photography included within this package.
+
+--------------------------------------------------------------------------------
+1. TYPOGRAPHY (FONTS)
+--------------------------------------------------------------------------------
+- Font Family: Cormorant Garamond
+  * Style: Light, Regular, Medium, SemiBold, Bold, Italic
+  * Designer: Christian Thalmann (Catharsis Fonts)
+  * Source: https://fonts.google.com/specimen/Cormorant+Garamond
+  * License: SIL Open Font License, Version 1.1 (OFL)
+  * Rights: Free for commercial, personal, and redistributed projects.
+  * Status: [PASS] Verified Open Source.
+
+- Font Family: Geist
+  * Style: Light, Regular, Medium, SemiBold, Bold
+  * Designer: Vercel Inc.
+  * Source: https://vercel.com/font
+  * License: SIL Open Font License, Version 1.1 (OFL)
+  * Rights: Free for commercial, personal, and redistributed projects.
+  * Status: [PASS] Verified Open Source.
+
+--------------------------------------------------------------------------------
+2. GRAPHICS & ICONS
+--------------------------------------------------------------------------------
+- Custom Brand Marks:
+  * Images/icons/logo.png & logo.svg (Header Logo)
+  * Images/icons/footer-logo.png & footer-logo.svg (Footer Logo)
+  * Author: Original vector creation by template author.
+  * License: Royalty-free for purchasers of YABO Email Template.
+  * Status: [PASS] 100% Original Work.
+
+- Social Media Icons:
+  * Images/icons/instagram.png & instagram.svg
+  * Images/icons/facebook.png & facebook.svg
+  * Images/icons/pinterest.png & pinterest.svg
+  * Author: Original minimal geometric icon design.
+  * License: Royalty-free for purchasers of YABO Email Template.
+  * Status: [PASS] 100% Original Work.
+
+--------------------------------------------------------------------------------
+3. DEMONSTRATION CULINARY PHOTOGRAPHY
+--------------------------------------------------------------------------------
+The following 7 culinary images are bundled in the 'Images/' directory:
+  1. Images/hero.jpg
+     - Description: Overhead flatlay brunch spread (800x447 px)
+  2. Images/delivery.jpg
+     - Description: Kraft paper delivery bag and fresh produce (600x448 px)
+  3. Images/dishes/sesame-power-bowl.jpg
+     - Description: Chef's favourite chicken & sesame quinoa bowl (480x480 px)
+  4. Images/dishes/dish-avocado-tomato.jpg
+     - Description: Heirloom cherry tomato & avocado sourdough toast (260x260 px)
+  5. Images/dishes/dish-sunny-egg.jpg
+     - Description: Sunny side up organic egg on rye sourdough (260x260 px)
+  6. Images/dishes/dish-wild-mushroom.jpg
+     - Description: Prosciutto & wild roasted mushroom toast (260x260 px)
+  7. Images/dishes/dish-smoked-salmon.jpg
+     - Description: Smoked salmon rose toast with poached egg & dill (260x260 px)
+
+* SOURCE & ORIGIN:
+  These images were generated during project development using generative AI
+  imagery tools (Google DeepMind ImageFX / Gemini model).
+* PURPOSE:
+  Bundled strictly as DEMONSTRATION / PLACEHOLDER PREVIEWS to demonstrate the
+  layout and typography pacing.
+* BUYER USAGE REQUIREMENT:
+  Purchasers are instructed to replace these demonstration photographs with
+  their own proprietary, licensed restaurant or brand photography prior to
+  sending live commercial broadcasts.
+* SUBMISSION / REDISTRIBUTION STATUS:
+  [FLAGGED FOR HUMAN VERIFICATION]
+  Prior to submitting to ThemeForest / Envato Elements, the account author must
+  verify that their Envato author standing permits AI-generated demonstration
+  assets under Envato's Generative AI content policy, OR replace these 7 files
+  with commercial stock photography (e.g. from Unsplash or licensed stock
+  services with documented commercial redistribution certificates).
+
+================================================================================

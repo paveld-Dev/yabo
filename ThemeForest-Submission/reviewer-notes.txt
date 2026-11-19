@@ -1,0 +1,61 @@
+================================================================================
+NOTE TO ENVATO THEMEFOREST REVIEWER
+Item: YABO - Restaurant & Cafe Responsive HTML Email Template
+================================================================================
+
+Dear Envato Quality Review Team,
+
+Thank you for reviewing YABO!
+
+Here is a summary of the technical specifications, compatibility features, and
+testing procedures implemented in this submission:
+
+1. STRUCTURE & STANDARDS:
+   - Built on a strict 600px table-based grid using standard XHTML 1.0 Transitional
+     and HTML5 email conventions.
+   - Microsoft Outlook (MSO) conditional comments (gte mso 9 | IE) lock the main
+     table container to 600px, preventing Word engine full-width stretching.
+   - Outlook webfont defense rules ensure graceful fallback to Georgia and Arial
+     without Times New Roman substitution.
+   - All multi-column sections (Header and Signature Dishes Zigzag) include MSO
+     table fallbacks to ensure columns never misalign in desktop Outlook.
+
+2. IMAGE HANDLING & UNIVERSAL CLIENT SUPPORT:
+   - All icons are provided as high-DPI @2x Retina PNGs with transparent
+     backgrounds, ensuring 100% universal rendering across Outlook (which does not
+     support SVG) and Gmail. Vector SVGs are also retained in the icons folder for
+     vector editing.
+   - All images feature explicit HTML width and height attributes, alt text, and
+     display: block styling to prevent unwanted white gaps.
+   - Production HTML uses clean relative paths (../Images/...) for immediate local
+     browser preview, with clear documentation and instructions on hosting images
+     on an HTTPS CDN before broadcast.
+
+3. MAILCHIMP & ESP INTEGRATION:
+   - Includes 35 unique mc:edit tags (no duplicate identifiers).
+   - Includes 8 mc:repeatable and mc:variant section blocks for visual section
+     reordering in the Mailchimp template editor.
+   - Footer contains pre-configured Mailchimp merge tags (*|UNSUB|*, *|UPDATE_PROFILE|*,
+     *|CURRENT_YEAR|*) with plain-text fallback guidelines.
+
+4. RESPONSIVE TESTING:
+   - Verified locally across viewports: 320px, 375px, 414px, 600px, 800px, 1200px in Chromium & WebKit. Physical inbox testing across live ESPs is recommended to buyers prior to commercial broadcasts.
+   - The alternating zigzag dishes cleanly collapse to stacked vertical cards
+     with centered imagery on screens <= 600px.
+   - Production HTML file size is ~44 KB (well under Gmail's 102 KB clipping threshold).
+
+5. DOCUMENTATION:
+   - Comprehensive 14-section HTML documentation included in 'Documentation/index.html'
+     with visual color swatches, font specs, HTTPS image hosting tutorial, ESP setup,
+     client compatibility notes, and licensing disclosures.
+
+6. FILES SUBMITTED:
+   - Main File: YABO-Email-Template.zip
+   - Thumbnail: thumbnail.png (80x80 px)
+   - Inline Preview: theme-preview.png (590x300 px)
+   - Presentation Cover: preview-cover.png (1200x800 px)
+
+We appreciate your review and look forward to your feedback.
+
+Best regards,
+Author Team
